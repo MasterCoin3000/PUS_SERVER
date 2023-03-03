@@ -3,6 +3,9 @@ const app = express()
 const port = 3500;
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
+console.log(process.env.DB_PATH);
 
 app.use(cors())
 app.use(express.json({limit: '50mb'}));
@@ -10,7 +13,7 @@ app.use(express.json({limit: '50mb'}));
 const mongoose = require('mongoose');
 
 var connectWithRetry = function() {
-  return mongoose.connect('mongodb://127.0.0.1:27017/RPS', function(err) {
+  return mongoose.connect('mongodb://192.168.20.22:27017/RPS', function(err) {
     if (err) {
       console.error('Failed to connect to mongo on startup - retrying in 5 sec', err);
       setTimeout(connectWithRetry, 5000);
@@ -18,7 +21,7 @@ var connectWithRetry = function() {
   });
 };
 
-//let isConnectedBefore = false
+let isConnectedBefore = false
 
 
 connectWithRetry();

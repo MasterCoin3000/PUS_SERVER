@@ -52,7 +52,18 @@ const changeFailStatus = async (ip, solvedFail) => {
 
 }
 
+const geTminersWithFail = async (req, res) =>{
+
+    const miners = await Fail.find({status: 'pending'})
+
+    res.status(200).json({
+        status: 'success',
+        data: miners
+    })
+}
+
 module.exports = {
     createFail,
-    changeFailStatus
+    changeFailStatus,
+    geTminersWithFail
 }
