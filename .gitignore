@@ -1,0 +1,16 @@
+norar carpeta node_modules
+node_modules
+
+# Ignorar todos los archivos de texto
+*.txt
+
+# Ignorar archivos relacionados con claves de una API
+.env
+
+# Ignorar archivos de configuración SASS
+.sass-cache
+
+.xlsx
+.vscode/
+
+uploads
