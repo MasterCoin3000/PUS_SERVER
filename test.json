@@ -1,0 +1,20 @@
+{'model': 'Antminer S9i', 'summary': {'STATUS': [
+            {'STATUS': 'S', 'When': 1648932635, 'Code': 11, 'Msg': 'Summary', 'Description': 'bmminer 1.0.0'
+            }
+        ], 'SUMMARY': [
+            {'Elapsed': 29058, 'GHS 5s': '12331.42', 'GHS av': 12368.39, 'Found Blocks': 0, 'Getworks': 1024, 'Accepted': 2473, 'Rejected': 8, 'Hardware Errors': 400, 'Utility': 5.11, 'Discarded': 15581, 'Stale': 0, 'Get Failures': 0, 'Local Work': 1325489, 'Remote Failures': 0, 'Network Blocks': 40, 'Total MH': 359400589456.0, 'Work Utility': 168610.07, 'Difficulty Accepted': 81395712.0, 'Difficulty Rejected': 262144.0, 'Difficulty Stale': 0.0, 'Best Share': 10758763721, 'Device Hardware%': 0.0005, 'Device Rejected%': 0.321, 'Pool Rejected%': 0.321, 'Pool Stale%': 0.0, 'Last getwork': 1648932634
+            }
+        ], 'id': 1
+    }, 'pollConfig': {'STATUS': [
+            {'STATUS': 'S', 'When': 1648932635, 'Code': 7, 'Msg': '3 Pool(s)', 'Description': 'bmminer 1.0.0'
+            }
+        ], 'POOLS': [
+            {'POOL': 0, 'Status': 'Alive', 'Priority': 0, 'Quota': 1, 'Long Poll': 'N', 'Getworks': 1021, 'Accepted': 2473, 'Rejected': 8, 'Discarded': 15581, 'Stale': 0, 'Get Failures': 0, 'Remote Failures': 0, 'User': 'YBTF2U4.F02U04R02M63', 'Last Share Time': '0: 00: 01', 'Diff': '32.8K', 'Diff1 Shares': 0, 'Proxy Type': '', 'Proxy': '', 'Difficulty Accepted': 81395712.0, 'Difficulty Rejected': 262144.0, 'Difficulty Stale': 0.0, 'Last Share Difficulty': 32768.0, 'Has Stratum': True, 'Stratum Active': True, 'Stratum URL': 'ub.poolbinance.com', 'Has GBT': False, 'Best Share': 10758763721, 'Pool Rejected%': 0.321, 'Pool Stale%': 0.0
+            },
+            {'POOL': 1,  'Status': 'Alive', 'Priority': 1, 'Quota': 1, 'Long Poll': 'N', 'Getworks': 3, 'Accepted': 0, 'Rejected': 0, 'Discarded': 0, 'Stale': 0, 'Get Failures': 0, 'Remote Failures': 0, 'User': 'F02U4A.F02U04R02M63', 'Last Share Time': '0', 'Diff': '', 'Diff1 Shares': 0, 'Proxy Type': '', 'Proxy': '', 'Difficulty Accepted': 0.0, 'Difficulty Rejected': 0.0, 'Difficulty Stale': 0.0, 'Last Share Difficulty': 0.0, 'Has Stratum': True, 'Stratum Active': False, 'Stratum URL': '', 'Has GBT': False, 'Best Share': 0, 'Pool Rejected%': 0.0, 'Pool Stale%': 0.0
+            },
+            {'POOL': 2, 'Status': 'Dead', 'Priority': 2, 'Quota': 1, 'Long Poll': 'N', 'Getworks': 0, 'Accepted': 0, 'Rejected': 0, 'Discarded': 0, 'Stale': 0, 'Get Failures': 0, 'Remote Failures': 0, 'User': 'coinwallet1NZ.F02U04R02M63', 'Last Share Time': '0', 'Diff': '', 'Diff1 Shares': 0, 'Proxy Type': '', 'Proxy': '', 'Difficulty Accepted': 0.0, 'Difficulty Rejected': 0.0, 'Difficulty Stale': 0.0, 'Last Share Difficulty': 0.0, 'Has Stratum': True, 'Stratum Active': False, 'Stratum URL': '', 'Has GBT': False, 'Best Share': 0, 'Pool Rejected%': 0.0, 'Pool Stale%': 0.0
+            }
+        ], 'id': 1
+    }
+}
