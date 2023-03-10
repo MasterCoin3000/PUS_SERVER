@@ -13,7 +13,7 @@ app.use(express.json({limit: '50mb'}));
 const mongoose = require('mongoose');
 
 var connectWithRetry = function() {
-  return mongoose.connect('mongodb://192.168.20.22:27017/RPS', function(err) {
+  return mongoose.connect(process.env.DB_PATH, function(err) {
     if (err) {
       console.error('Failed to connect to mongo on startup - retrying in 5 sec', err);
       setTimeout(connectWithRetry, 5000);
@@ -60,10 +60,12 @@ mongoose.connection.on('connected', function() {
 const ipRangesRoutes = require("./ipRanges/routes.config");
 const minerRoutes = require("./Miner/routes.confid");
 const scanRegisterRoutes = require('./scan-register/routes.config')
+const failsRoutes = require('./fails/routes.config')
 
 app.use("/ipRanges", ipRangesRoutes);
 app.use("/minerRegister", minerRoutes);
 app.use("/scanRegister", scanRegisterRoutes);
+app.use("/fails", failsRoutes);
 
 app.use('/test', (req, res) => {
 
