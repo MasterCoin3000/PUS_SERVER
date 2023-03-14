@@ -6,6 +6,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 console.log(process.env.DB_PATH);
+//mongoose.set('strictQuery', true)
 
 app.use(cors())
 app.use(express.json({limit: '50mb'}));

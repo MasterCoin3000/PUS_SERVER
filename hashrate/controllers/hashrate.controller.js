@@ -16,7 +16,7 @@ exports.getHasrateRegisters = async (req,res) => {
 
 exports.saveHashrateRegister = async (req, res) => {
 
-    const hashrateRegs = Object.entries(req.body.hashrate)
+    const hashrateRegs = Object.entries(req.body.hashRateByU)
 
     const newHashrateRegs = hashrateRegs.map(async (hashrateReg) => {
         return await Hashrate.create({hashrate: hashrateReg[1], U: hashrateReg[2]});
