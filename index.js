@@ -62,11 +62,13 @@ const ipRangesRoutes = require("./ipRanges/routes.config");
 const minerRoutes = require("./Miner/routes.confid");
 const scanRegisterRoutes = require('./scan-register/routes.config')
 const failsRoutes = require('./fails/routes.config')
+const hashateRoutes = require('./hashrate/routes.config')
 
 app.use("/ipRanges", ipRangesRoutes);
 app.use("/minerRegister", minerRoutes);
 app.use("/scanRegister", scanRegisterRoutes);
 app.use("/fails", failsRoutes);
+app.use("/hashrate", hashateRoutes);
 
 app.use('/test', (req, res) => {
 
