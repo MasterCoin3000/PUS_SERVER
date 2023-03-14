@@ -456,8 +456,7 @@ const saveMiner4 = async (Us,scanId, minerCoun) => {
     
     const newMiners = []
 
-    const plz = Us.map(async (miners) => {
-       const res = miners.map(async (miner, index) => {
+       const res = Us.map(async (miner, index) => {
     
             //const prevMiner = await Miner.findOne({ip: miner.ip})
         
@@ -581,25 +580,19 @@ const saveMiner4 = async (Us,scanId, minerCoun) => {
             if ((index+1) === miners.length) {
                 console.log('done');
             }
-            })
-
-        const result = Promise.all(res)
-        return result
-    });
+        })
     
     const deleteOldMiiners = await Miner.remove()
 
-    const ho = await Promise.all(plz)
+    const ho = await Promise.all(res)
 
     console.log(ho);
 
     console.log('deleted stuff ', deleteOldMiiners);
     if (deleteOldMiiners) {
         console.log('newminers',newMiners.length);
-        ho.forEach(Us => {
-            Us.forEach(miner => {
+        ho.forEach(miner => {
                 Miner.create(miner)
-            })
         })
         // newMiners.forEach(async (miner) => {
         //     await Miner.create(miner)
